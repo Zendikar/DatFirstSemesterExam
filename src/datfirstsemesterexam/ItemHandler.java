@@ -18,10 +18,10 @@ public interface ItemHandler {
 
     public String readFile(String filename) throws IOException;    
     public ArrayList<Item> getItems(String data) throws MyException;
-    public Item getItem(String name);
+    public Item getItem(String name, ArrayList<Item> al);
     public void sortByName(ArrayList<Item> al);
     public void sortByPowerLvl(ArrayList<Item> al);
-    public boolean isPowerLevelTooHigh(int powerlevel);
+    public boolean isPowerLevelTooHigh(int powerlevel, ArrayList<Item> al);
     public ArrayList<Item> getItemsWithHighestPowerLvl(ArrayList<Item> al);
     public ArrayList<Item> getItemsAquiredBeforeDate(MyDate date, ArrayList<Item> al);
     public ArrayList<Item> getItemsAquiredOnDate(MyDate date, ArrayList<Item> al);

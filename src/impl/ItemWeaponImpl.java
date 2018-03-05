@@ -15,7 +15,7 @@ public class ItemWeaponImpl extends ItemImpl implements ItemWeapon{
 
     private final double dps;
 
-    public ItemWeaponImpl(double dps, String name, int powerLvl, MyDate timeAquired) {
+    public ItemWeaponImpl(String name, int powerLvl, MyDate timeAquired, double dps) {
         super(name, powerLvl, timeAquired);
         this.dps = dps;
     }

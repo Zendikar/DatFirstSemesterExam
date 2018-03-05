@@ -76,9 +76,10 @@ public class ItemHandlerImplTest {
     public void testGetItem() {
         System.out.println("getItem");
         String name = "";
+        ArrayList<Item> al = null;
         ItemHandlerImpl instance = new ItemHandlerImpl();
         Item expResult = null;
-        Item result = instance.getItem(name);
+        Item result = instance.getItem(name, al);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -117,9 +118,10 @@ public class ItemHandlerImplTest {
     public void testIsPowerLevelTooHigh() {
         System.out.println("isPowerLevelTooHigh");
         int powerlevel = 0;
+        ArrayList<Item> al = null;
         ItemHandlerImpl instance = new ItemHandlerImpl();
         boolean expResult = false;
-        boolean result = instance.isPowerLevelTooHigh(powerlevel);
+        boolean result = instance.isPowerLevelTooHigh(powerlevel, al);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
